@@ -224,11 +224,11 @@ sup {
 }
 
 a {
-  color: #1D809F;
+  color: #c6056f;
   text-decoration: underline;
 }
 a:hover {
-  color: #17667f;
+  color: #c6056f;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -298,7 +298,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: #6c757d;
+  color: #c6056f;
   text-align: left;
 }
 
@@ -3016,26 +3016,26 @@ textarea.form-control-lg {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #8f0450;
-  border-color: #630338;
+  background-color: #c6056f;
+  border-color: #8f0450;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #196d87;
-  border-color: #17667f;
+  background-color: #c6056f;
+  border-color: 630338;
   box-shadow: 0 0 0 0.25rem rgba(63, 147, 173, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #17667f;
-  border-color: #166077;
+  background-color: #c6056f;
+  border-color: #8f0450;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(63, 147, 173, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #1D809F;
+  background-color: #c6056f;
   border-color: #1D809F;
 }
 
@@ -11476,69 +11476,20 @@ footer.footer .social-link:hover {
   }
 }
 
-.portfolio-item {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  max-width: 530px;
-  margin: auto auto 1rem;
-}
-.portfolio-item .caption {
+#portfolio .cards{
+
   display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
+
 }
-.portfolio-item .caption .caption-content {
-  color: #fff;
-  margin: auto 2rem 2rem;
-}
-.portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-.portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-@media (min-width: 992px) {
-  .portfolio-item {
-    max-width: none;
-    margin: 0;
-  }
-  .portfolio-item .caption {
-    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, background-color 0.7s;
-    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(0px);
-            clip-path: inset(0px);
-  }
-  .portfolio-item .caption .caption-content {
-    transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
-  }
-  .portfolio-item img {
-    transition: -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-            clip-path: inset(-1px);
-  }
-  .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
-  }
-  .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
-  }
+
+#portfolio .tekst{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .service-icon {
@@ -11551,8 +11502,23 @@ footer.footer .social-link:hover {
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
-#maxwell {
-  display: none;
-  width: 50vw;
-  height: 50vh;
+
+
+.progress {
+  position: relative;
+height: 25px;
+}
+.progress > .progress-type {
+position: absolute;
+left: 0px;
+font-weight: 800;
+padding: 3px 30px 2px 10px;
+color: rgb(255, 255, 255);
+background-color: rgba(25, 25, 25, 0.2);
+}
+.progress > .progress-completed {
+position: absolute;
+right: 0px;
+font-weight: 800;
+padding: 3px 10px 2px;
 }
