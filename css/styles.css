@@ -11457,7 +11457,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/chiaotzu.png");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/wallpaper.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11466,12 +11466,103 @@ footer.footer .social-link:hover {
   font-size: 4rem;
   margin: 0;
   padding: 0;
+  -webkit-text-stroke: 2px white;
+}
+
+.masthead em{
+  color: white;
 }
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
   }
   .masthead h1, .masthead .h1 {
+    font-size: 5.5rem;
+  }
+}
+
+.masthead1 {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/Project1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.masthead1 h1, .masthead1 .h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .masthead1 {
+    height: 100vh;
+  }
+  .masthead1 h1, .masthead1 .h1 {
+    font-size: 5.5rem;
+  }
+}
+
+.masthead2 {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/Project2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.masthead2 h1, .masthead2 .h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .masthead2 {
+    height: 100vh;
+  }
+  .masthead2 h1, .masthead2 .h1 {
+    font-size: 5.5rem;
+  }
+}
+.masthead3 {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/Project3.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.masthead3 h1, .masthead3 .h1 {
+  font-size: 4rem;
+  margin: 0;
+  -webkit-text-stroke: 2px white;
+}
+
+.masthead3 em{
+  color: white;
+}
+@media (min-width: 992px) {
+  .masthead3 {
+    height: 100vh;
+  }
+  .masthead3 h1, .masthead3 .h1 {
     font-size: 5.5rem;
   }
 }
@@ -11521,4 +11612,17 @@ position: absolute;
 right: 0px;
 font-weight: 800;
 padding: 3px 10px 2px;
+}
+
+.images{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.image{
+  width: 30vw;
+  height: 50vh;
 }
